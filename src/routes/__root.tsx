@@ -116,8 +116,12 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
-      <Outlet />
+      <Navbar />
+      <main className="bg-[#0A0A0A] text-[var(--cream)] overflow-x-hidden min-h-screen">
+        <Outlet />
+      </main>
+      <Footer />
+      <FloatingWhatsApp />
     </QueryClientProvider>
   );
 }
