@@ -16,6 +16,7 @@ import { Route as ContactRouteImport } from './routes/contact'
 import { Route as CollectionsRouteImport } from './routes/collections'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ApiStylistRouteImport } from './routes/api/stylist'
 
 const ServicesRoute = ServicesRouteImport.update({
   id: '/services',
@@ -52,6 +53,11 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ApiStylistRoute = ApiStylistRouteImport.update({
+  id: '/api/stylist',
+  path: '/api/stylist',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -61,6 +67,7 @@ export interface FileRoutesByFullPath {
   '/lookbook': typeof LookbookRoute
   '/reviews': typeof ReviewsRoute
   '/services': typeof ServicesRoute
+  '/api/stylist': typeof ApiStylistRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -70,6 +77,7 @@ export interface FileRoutesByTo {
   '/lookbook': typeof LookbookRoute
   '/reviews': typeof ReviewsRoute
   '/services': typeof ServicesRoute
+  '/api/stylist': typeof ApiStylistRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -80,6 +88,7 @@ export interface FileRoutesById {
   '/lookbook': typeof LookbookRoute
   '/reviews': typeof ReviewsRoute
   '/services': typeof ServicesRoute
+  '/api/stylist': typeof ApiStylistRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -91,6 +100,7 @@ export interface FileRouteTypes {
     | '/lookbook'
     | '/reviews'
     | '/services'
+    | '/api/stylist'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -100,6 +110,7 @@ export interface FileRouteTypes {
     | '/lookbook'
     | '/reviews'
     | '/services'
+    | '/api/stylist'
   id:
     | '__root__'
     | '/'
@@ -109,6 +120,7 @@ export interface FileRouteTypes {
     | '/lookbook'
     | '/reviews'
     | '/services'
+    | '/api/stylist'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -119,6 +131,7 @@ export interface RootRouteChildren {
   LookbookRoute: typeof LookbookRoute
   ReviewsRoute: typeof ReviewsRoute
   ServicesRoute: typeof ServicesRoute
+  ApiStylistRoute: typeof ApiStylistRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -172,6 +185,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/api/stylist': {
+      id: '/api/stylist'
+      path: '/api/stylist'
+      fullPath: '/api/stylist'
+      preLoaderRoute: typeof ApiStylistRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -183,6 +203,7 @@ const rootRouteChildren: RootRouteChildren = {
   LookbookRoute: LookbookRoute,
   ReviewsRoute: ReviewsRoute,
   ServicesRoute: ServicesRoute,
+  ApiStylistRoute: ApiStylistRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
