@@ -11,7 +11,8 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
-import { Navbar, Footer, FloatingWhatsApp } from "../components/site";
+import { Navbar, Footer } from "../components/site";
+import { VirtualStylist } from "../components/virtual-stylist";
 
 function NotFoundComponent() {
   return (
@@ -126,7 +127,7 @@ function RootComponent() {
         <Outlet />
       </main>
       <Footer />
-      <FloatingWhatsApp />
+      <VirtualStylist />
     </QueryClientProvider>
   );
 }
