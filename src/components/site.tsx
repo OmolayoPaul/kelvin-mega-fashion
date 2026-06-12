@@ -9,8 +9,15 @@ import look6 from "@/assets/collections/look6.jpeg.asset.json";
 import look7 from "@/assets/collections/look7.jpeg.asset.json";
 import look8 from "@/assets/collections/look8.jpeg.asset.json";
 import look9 from "@/assets/collections/look9.jpeg.asset.json";
+import look10 from "@/assets/collections/look10.jpeg.asset.json";
+import look11 from "@/assets/collections/look11.jpeg.asset.json";
+import look12 from "@/assets/collections/look12.jpeg.asset.json";
+import look13 from "@/assets/collections/look13.jpeg.asset.json";
+import look14 from "@/assets/collections/look14.jpeg.asset.json";
+import look15 from "@/assets/collections/look15.jpeg.asset.json";
+import look16 from "@/assets/collections/look16.jpeg.asset.json";
 
-export { look1, look2, look3, look4, look5, look6, look7, look8, look9 };
+export { look1, look2, look3, look4, look5, look6, look7, look8, look9, look10, look11, look12, look13, look14, look15, look16 };
 
 export const WA = "2348087437117";
 export const waLink = (msg: string) =>
@@ -26,7 +33,15 @@ export const COLLECTIONS = [
   { img: look7.url, title: "Emerald Soiree", desc: "Women's emerald three-piece kaftan — bespoke for the matriarch.", cat: "casual" },
   { img: look8.url, title: "Mustard Heritage Smart", desc: "Two-tone smart casual top with tailored chinos.", cat: "casual" },
   { img: look9.url, title: "Azure Embroidered Native", desc: "Cobalt native with cascading silver-thread floral embroidery.", cat: "suits" },
+  { img: look10.url, title: "Rose Aso-Oke Regal", desc: "Striped rose Agbada with embroidered yoke, fila and horsetail.", cat: "senator" },
+  { img: look11.url, title: "Family in White", desc: "Matching family suite — crisp whites with cobalt placket accents.", cat: "casual" },
+  { img: look12.url, title: "Ivory Chevron Native", desc: "Ivory native top with hand-stitched cobalt chevron placket.", cat: "senator" },
+  { img: look13.url, title: "Powder Blue Muse", desc: "Women's powder-blue two-piece — quiet luxury, perfect drape.", cat: "casual" },
+  { img: look14.url, title: "Cobalt Aso-Oke Prince", desc: "Royal blue Agbada with coral beads and embroidered fila.", cat: "senator" },
+  { img: look15.url, title: "Little Heritage Print", desc: "Boys' monochrome print native with crisp ivory shorts.", cat: "casual" },
+  { img: look16.url, title: "Tiny Aristocrat", desc: "Boys' ivory Agbada with burgundy embroidered vest and fila.", cat: "senator" },
 ];
+
 
 const FILTERS = [
   { id: "all", label: "All Works" },
