@@ -226,7 +226,7 @@ export function About() {
     <section className="py-20 relative">
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
         <div className="relative">
-          <img src={look5.url} alt="The Designer" className="w-full rounded-sm gold-glow object-cover aspect-[4/5]" />
+          <img src={designer.url} alt="Kelvin Emwanta — Creative Director" className="w-full rounded-sm gold-glow object-cover aspect-[4/5]" />
           <div className="absolute -bottom-6 -right-6 glass gold-border p-5 max-w-[200px]">
             <div className="font-display gold-text text-xl">Kelvin Emwanta</div>
             <div className="text-xs text-[var(--cream)]/60 tracking-widest uppercase mt-1">Creative Director</div>
