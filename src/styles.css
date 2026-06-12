@@ -108,6 +108,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
+  &:hover { box-shadow: 0 10px 40px -10px rgba(212, 175, 55, 0.6); transform: translateY(-2px); }
 }
 @utility btn-gold-outline {
   border: 1px solid #D4AF37;
@@ -123,12 +124,7 @@
   align-items: center;
   gap: 0.5rem;
   background: transparent;
-}
-@utility btn-gold-outline {
   &:hover { background: rgba(212, 175, 55, 0.1); }
-}
-@utility btn-gold {
-  &:hover { box-shadow: 0 10px 40px -10px rgba(212, 175, 55, 0.6); transform: translateY(-2px); }
 }
 
 @keyframes float-y {
