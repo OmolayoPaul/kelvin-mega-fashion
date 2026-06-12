@@ -11,6 +11,7 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+import { Navbar, Footer, FloatingWhatsApp } from "../components/site";
 
 function NotFoundComponent() {
   return (
@@ -116,8 +117,12 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
-      <Outlet />
+      <Navbar />
+      <main className="bg-[#0A0A0A] text-[var(--cream)] overflow-x-hidden min-h-screen">
+        <Outlet />
+      </main>
+      <Footer />
+      <FloatingWhatsApp />
     </QueryClientProvider>
   );
 }
