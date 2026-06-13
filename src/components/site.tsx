@@ -395,7 +395,7 @@ export function ContactForm() {
           <div className="space-y-3 text-sm text-[var(--cream)]/75">
             <div>📍 Owode Ibeshe, Ikorodu, Lagos</div>
             <div>📞 +234 808 743 7117</div>
-            <div>✉ bespoke@kelvinmegafashion.com</div>
+            <div>✉ Kelvinmegafashion@gmail.com</div>
             <div>🕓 Mon–Sat 09:00–18:00 · Sun by invitation</div>
           </div>
         </div>
@@ -487,7 +487,7 @@ export function Footer() {
             <li>Owode Ibeshe, Ikorodu</li>
             <li>Lagos, Nigeria</li>
             <li>+234 808 743 7117</li>
-            <li>bespoke@kelvinmegafashion.com</li>
+            <li>Kelvinmegafashion@gmail.com</li>
           </ul>
         </div>
         <div>
