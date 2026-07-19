@@ -16,9 +16,14 @@ import look13 from "@/assets/collections/look13.jpeg.asset.json";
 import look14 from "@/assets/collections/look14.jpeg.asset.json";
 import look15 from "@/assets/collections/look15.jpeg.asset.json";
 import look16 from "@/assets/collections/look16.jpeg.asset.json";
+import look17 from "@/assets/collections/look17.jpeg.asset.json";
+import look18 from "@/assets/collections/look18.jpeg.asset.json";
+import look19 from "@/assets/collections/look19.jpeg.asset.json";
+import look20 from "@/assets/collections/look20.jpeg.asset.json";
+import look21 from "@/assets/collections/look21.jpeg.asset.json";
 import designer from "@/assets/designer.jpeg.asset.json";
 
-export { look1, look2, look3, look4, look5, look6, look7, look8, look9, look10, look11, look12, look13, look14, look15, look16 };
+export { look1, look2, look3, look4, look5, look6, look7, look8, look9, look10, look11, look12, look13, look14, look15, look16, look17, look18, look19, look20, look21 };
 
 export const WA = "2348087437117";
 export const waLink = (msg: string) =>
@@ -41,7 +46,13 @@ export const COLLECTIONS = [
   { img: look14.url, title: "Cobalt Aso-Oke Prince", desc: "Royal blue Agbada with coral beads and embroidered fila.", cat: "senator" },
   { img: look15.url, title: "Little Heritage Print", desc: "Boys' monochrome print native with crisp ivory shorts.", cat: "casual" },
   { img: look16.url, title: "Tiny Aristocrat", desc: "Boys' ivory Agbada with burgundy embroidered vest and fila.", cat: "senator" },
+  { img: look17.url, title: "Ivory Cross-Stitch Native", desc: "Crisp ivory native with hand cross-stitched placket and pocket motif.", cat: "senator" },
+  { img: look18.url, title: "Pearl Kaftan Regale", desc: "Off-white kaftan with gilded braid trim on cuffs and pocket.", cat: "senator" },
+  { img: look19.url, title: "Ivory Heritage Embroidery", desc: "Textured ivory native with gold and black diamond embroidery.", cat: "senator" },
+  { img: look20.url, title: "Onyx Woven Placket", desc: "Black native with copper woven placket and matching aso-oke fila.", cat: "senator" },
+  { img: look21.url, title: "Azure Regal Native", desc: "Sky-blue native with tonal braided placket and cuff detailing.", cat: "senator" },
 ];
+
 
 
 const FILTERS = [
@@ -201,7 +212,7 @@ export function HomeHighlights() {
         {cards.map((c) => (
           <Link key={c.to} to={c.to} className="group glass overflow-hidden rounded-sm border border-[var(--gold)]/15 hover:border-[var(--gold)]/60 transition">
             <div className="aspect-[4/5] overflow-hidden bg-black">
-              <img src={c.img} alt={c.t} className="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+              <img src={c.img} alt={c.t} loading="lazy" decoding="async" className="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
             </div>
             <div className="p-6">
               <h3 className="font-display text-2xl mb-2 gold-text">{c.t}</h3>
@@ -274,7 +285,7 @@ export function Collections() {
           {items.map((c) => (
             <article key={c.title} className="group glass overflow-hidden rounded-sm border border-[var(--gold)]/15 hover:border-[var(--gold)]/60 transition">
               <div className="aspect-[4/5] overflow-hidden bg-black">
-                <img src={c.img} alt={c.title} loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+                <img src={c.img} alt={c.title} loading="lazy" decoding="async" className="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
               </div>
               <div className="p-6">
                 <h3 className="font-display text-xl mb-1">{c.title}</h3>
