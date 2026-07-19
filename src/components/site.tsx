@@ -160,7 +160,7 @@ export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
       <div className="absolute inset-0">
-        <img src={look6.url} alt="Bespoke senator" className="w-full h-full object-cover object-center opacity-50" />
+        <img src={look6.url} alt="Bespoke senator" fetchPriority="high" decoding="async" className="w-full h-full object-cover object-center opacity-50" />
         <div className="absolute inset-0 bg-gradient-to-r from-black via-black/85 to-black/40" />
         <div className="absolute -top-32 -left-32 w-[500px] h-[500px] rounded-full bg-[var(--gold)]/15 blur-[120px]" />
         <div className="absolute bottom-0 right-0 w-[400px] h-[400px] rounded-full bg-[var(--gold-dark)]/20 blur-[140px]" />
