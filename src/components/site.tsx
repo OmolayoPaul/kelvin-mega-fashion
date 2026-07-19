@@ -16,9 +16,14 @@ import look13 from "@/assets/collections/look13.jpeg.asset.json";
 import look14 from "@/assets/collections/look14.jpeg.asset.json";
 import look15 from "@/assets/collections/look15.jpeg.asset.json";
 import look16 from "@/assets/collections/look16.jpeg.asset.json";
+import look17 from "@/assets/collections/look17.jpeg.asset.json";
+import look18 from "@/assets/collections/look18.jpeg.asset.json";
+import look19 from "@/assets/collections/look19.jpeg.asset.json";
+import look20 from "@/assets/collections/look20.jpeg.asset.json";
+import look21 from "@/assets/collections/look21.jpeg.asset.json";
 import designer from "@/assets/designer.jpeg.asset.json";
 
-export { look1, look2, look3, look4, look5, look6, look7, look8, look9, look10, look11, look12, look13, look14, look15, look16 };
+export { look1, look2, look3, look4, look5, look6, look7, look8, look9, look10, look11, look12, look13, look14, look15, look16, look17, look18, look19, look20, look21 };
 
 export const WA = "2348087437117";
 export const waLink = (msg: string) =>
