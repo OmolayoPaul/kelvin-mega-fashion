@@ -160,7 +160,7 @@ export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
       <div className="absolute inset-0">
-        <img src={look6.url} alt="Bespoke senator" className="w-full h-full object-cover object-center opacity-50" />
+        <img src={look6.url} alt="Bespoke senator" fetchPriority="high" decoding="async" className="w-full h-full object-cover object-center opacity-50" />
         <div className="absolute inset-0 bg-gradient-to-r from-black via-black/85 to-black/40" />
         <div className="absolute -top-32 -left-32 w-[500px] h-[500px] rounded-full bg-[var(--gold)]/15 blur-[120px]" />
         <div className="absolute bottom-0 right-0 w-[400px] h-[400px] rounded-full bg-[var(--gold-dark)]/20 blur-[140px]" />
@@ -282,11 +282,12 @@ export function Collections() {
           ))}
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {items.map((c) => (
+          {items.map((c, i) => (
             <article key={c.title} className="group glass overflow-hidden rounded-sm border border-[var(--gold)]/15 hover:border-[var(--gold)]/60 transition">
               <div className="aspect-[4/5] overflow-hidden bg-black">
-                <img src={c.img} alt={c.title} loading="lazy" decoding="async" className="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+                <img src={c.img} alt={c.title} loading={i < 3 ? "eager" : "lazy"} fetchPriority={i < 3 ? "high" : "auto"} decoding="async" className="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
               </div>
+
               <div className="p-6">
                 <h3 className="font-display text-xl mb-1">{c.title}</h3>
                 <p className="text-sm text-[var(--cream)]/60 mb-4">{c.desc}</p>
