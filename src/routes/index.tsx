@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Hero, HomeHighlights, About, Testimonials, Newsletter } from "@/components/site";
+import { Hero, HomeHighlights, About, Testimonials, Newsletter, look6 } from "@/components/site";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -9,7 +9,11 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: "Kelvin Mega Fashion House" },
       { property: "og:description", content: "Uncompromising fit. Bespoke men's couture from Lagos." },
     ],
+    links: [
+      { rel: "preload", as: "image", href: look6.url, fetchpriority: "high" },
+    ],
   }),
+
   component: () => (
     <>
       <Hero />
