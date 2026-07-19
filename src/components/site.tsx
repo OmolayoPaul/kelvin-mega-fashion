@@ -282,11 +282,12 @@ export function Collections() {
           ))}
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {items.map((c) => (
+          {items.map((c, i) => (
             <article key={c.title} className="group glass overflow-hidden rounded-sm border border-[var(--gold)]/15 hover:border-[var(--gold)]/60 transition">
               <div className="aspect-[4/5] overflow-hidden bg-black">
-                <img src={c.img} alt={c.title} loading="lazy" decoding="async" className="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+                <img src={c.img} alt={c.title} loading={i < 3 ? "eager" : "lazy"} fetchPriority={i < 3 ? "high" : "auto"} decoding="async" className="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
               </div>
+
               <div className="p-6">
                 <h3 className="font-display text-xl mb-1">{c.title}</h3>
                 <p className="text-sm text-[var(--cream)]/60 mb-4">{c.desc}</p>
