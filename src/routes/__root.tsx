@@ -87,8 +87,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Kelvin Mega Fashion — Bespoke Tailoring & Senator Couture" },
       { name: "twitter:description", content: "Bespoke men's tailoring, traditional Senator & Agbada couture, and executive styling by Kelvin Mega Fashion House, Lagos." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/81f5abbf-fa01-492a-8262-7d1759d858a7/id-preview-b4c69983--4391c850-d29b-47d4-9857-705cd1c901d6.lovable.app-1781300903604.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/81f5abbf-fa01-492a-8262-7d1759d858a7/id-preview-b4c69983--4391c850-d29b-47d4-9857-705cd1c901d6.lovable.app-1781300903604.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },

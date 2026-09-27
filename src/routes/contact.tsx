@@ -8,6 +8,8 @@ export const Route = createFileRoute("/contact")({
       { name: "description", content: "Visit our Owode Ibeshe atelier in Ikorodu, Lagos, or book a private fitting via WhatsApp." },
       { property: "og:title", content: "Book a Fitting — Kelvin Mega" },
       { property: "og:description", content: "Private fittings, by appointment only — Owode Ibeshe, Lagos." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: () => (

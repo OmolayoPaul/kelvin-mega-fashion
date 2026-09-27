@@ -21,6 +21,8 @@ import look18 from "@/assets/collections/look18.jpeg.asset.json";
 import look19 from "@/assets/collections/look19.jpeg.asset.json";
 import look20 from "@/assets/collections/look20.jpeg.asset.json";
 import look21 from "@/assets/collections/look21.jpeg.asset.json";
+import look22 from "@/assets/collections/look22.webp.asset.json";
+import look23 from "@/assets/collections/look23.webp.asset.json";
 import designer from "@/assets/designer.jpeg.asset.json";
 
 export { look1, look2, look3, look4, look5, look6, look7, look8, look9, look10, look11, look12, look13, look14, look15, look16, look17, look18, look19, look20, look21 };
@@ -51,6 +53,8 @@ export const COLLECTIONS = [
   { img: look19.url, title: "Ivory Heritage Embroidery", desc: "Textured ivory native with gold and black diamond embroidery.", cat: "senator" },
   { img: look20.url, title: "Onyx Woven Placket", desc: "Black native with copper woven placket and matching aso-oke fila.", cat: "senator" },
   { img: look21.url, title: "Azure Regal Native", desc: "Sky-blue native with tonal braided placket and cuff detailing.", cat: "senator" },
+  { img: look22.url, title: "Sweet Heritage Set", desc: "Statement print two-piece with relaxed sleeves and contrasting trousers.", cat: "casual" },
+  { img: look23.url, title: "Sky Blue Native", desc: "Easy-fitting sky-blue native set with matching cap.", cat: "senator" },
 ];
 
 
@@ -285,7 +289,7 @@ export function Collections() {
           {items.map((c, i) => (
             <article key={c.title} className="group glass overflow-hidden rounded-sm border border-[var(--gold)]/15 hover:border-[var(--gold)]/60 transition">
               <div className="aspect-[4/5] overflow-hidden bg-black">
-                <img src={c.img} alt={c.title} loading={i < 3 ? "eager" : "lazy"} fetchPriority={i < 3 ? "high" : "auto"} decoding="async" className="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+                <img src={c.img} alt={c.title} loading={i < 3 ? "eager" : "lazy"} fetchPriority={i < 3 ? "high" : "auto"} decoding="async" width={960} height={1200} className="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
               </div>
 
               <div className="p-6">

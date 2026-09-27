@@ -8,6 +8,8 @@ export const Route = createFileRoute("/")({
       { name: "description", content: "Lagos atelier crafting bespoke suits, Senator couture, and executive smart-casual for discerning gentlemen." },
       { property: "og:title", content: "Kelvin Mega Fashion House" },
       { property: "og:description", content: "Uncompromising fit. Bespoke men's couture from Lagos." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
       { rel: "preload", as: "image", href: look6.url, fetchpriority: "high" },

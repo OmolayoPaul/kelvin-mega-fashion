@@ -8,6 +8,8 @@ export const Route = createFileRoute("/about")({
       { name: "description", content: "Meet Kelvin Emwanta — the master tailor and creative director behind Kelvin Mega Fashion House, Lagos." },
       { property: "og:title", content: "The Designer — Kelvin Emwanta" },
       { property: "og:description", content: "A decade of bespoke craft, dressing senators, executives, and grooms across West Africa." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: () => (
