@@ -8,6 +8,8 @@ export const Route = createFileRoute("/reviews")({
       { name: "description", content: "Words from chiefs, executives, and gentlemen across Nigeria who entrust Kelvin Mega with their wardrobe." },
       { property: "og:title", content: "Reviews — Kelvin Mega Fashion" },
       { property: "og:description", content: "Six years of return clients and quiet recommendations." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: () => (

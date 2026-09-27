@@ -8,6 +8,8 @@ export const Route = createFileRoute("/services")({
       { name: "description", content: "Three atelier services: bespoke suit couture, traditional Senator craft, and executive styling advisory." },
       { property: "og:title", content: "Atelier Services — Kelvin Mega" },
       { property: "og:description", content: "Bespoke suits, Senator craft, and private styling advisory." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: () => (

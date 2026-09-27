@@ -8,6 +8,8 @@ export const Route = createFileRoute("/collections")({
       { name: "description", content: "A curated archive of bespoke commissions: Agbada, Senator wear, suits, and smart casual — each piece one-of-one." },
       { property: "og:title", content: "Collections — Kelvin Mega Fashion" },
       { property: "og:description", content: "Bespoke commissions, hand-cut in our Lagos atelier." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: () => (

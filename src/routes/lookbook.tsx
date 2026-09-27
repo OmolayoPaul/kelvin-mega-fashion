@@ -8,6 +8,8 @@ export const Route = createFileRoute("/lookbook")({
       { name: "description", content: "Behind the seams: process, accessories, and the philosophy of the Kelvin Mega Fashion House atelier." },
       { property: "og:title", content: "Lookbook — Kelvin Mega Fashion" },
       { property: "og:description", content: "From concept to finished silhouette — see the craft." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: () => (
